@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="img/bg.jpg" class="bgimg" />
+    <header class="padd10 col-md-12 page-header"><h3>Hotel booking</h3></header>
+    <nav class="padd10 col-md-12 navbar navbar-default">
+        <a class="navlinks" href="index.html">&rarr;Home Page</a>
+        <a class="navlinks" href="addhotel.html">&rarr;Add hotel</a>
+    </nav>
+    <aside class ="col-md-3">Asideeee</aside>
+    <article class="col-md-9">
+        <section>
+            <form class="col-md-12 form-horizontal" action="">
+                <br /><br />
+                <label for="name">Name:</label>
+                <input type="text" name="name" value="" required autofocus>
+                <br /><br />
+                <label for="address">Address:</label>
+                <input type="text" name="address" value="" required>
+                <br /><br />
+                <label for="city">City:</label>
+                <select name="city">
+                    <option value="oras1">Oras1</option>
+                    <option value="oras2">Oras2</option>
+                    <option value="oras3">Oras3</option>
+                    <option value="oras4">Oras4</option>
+                </select>
+                <br /><br />
+                <label for="email">Email:</label>
+                <input type="email" name="email" value="" required>
+                <br /><br />
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" value="" required>
+                <br /><br />
+                <label for="site">Site:</label>
+                <input type="url" name="site" value="">
+                <br /><br />
+                <label for="room">Room no.:</label>
+                <input type="number" min="1" max="100" name="room" value="" required placeholder="1-100">
+                <br /><br />
+                <label for="star">Star no.:</label>
+                <input type="number" min="1" max="5" name="star" value="" required placeholder="1-5">
+                <br /><br />
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
+        </section>
+    </article>
+    <footer class="col-md-12">From zero to hero, Teamnet Iasi</footer>
+</body>
+</html>

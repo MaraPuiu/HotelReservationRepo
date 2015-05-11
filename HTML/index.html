@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <img src="img/bg.jpg" class="bgimg"/>
+    <header class="padd10 col-md-12 page-header"><h3>Hotel booking</h3></header>
+    <nav class="padd10 col-md-12 navbar navbar-default">
+        <a class="navlinks" href="index.html">&rarr;Home Page</a>
+        <a class="navlinks" href="addhotel.html" >&rarr;Add hotel</a>
+    </nav>
+    <aside class ="col-md-3">
+        <ul class="list-group">
+            <li class ="list-group-item"><a href=" #show">Show hotels</a></li>
+            <li class="list-group-item"><a href="#search">Search</a></li>
+            <li class="list-group-item"><a href="#deals">Last minute deals</a></li>
+        </ul>
+    </aside>
+    <article class="col-md-9">
+        <section id="show">
+            <table class="col-md-12 table table-hover" border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Adress</th>
+                        <th>City</th>
+                        <th>Site</th>
+                        <th>Rooms</th>
+                        <th>Stars</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hotel1</td>
+                        <td>Iasi</td>
+                        <td>Iasi</td>
+                        <td><a href="http://google.com" target="_blank">Site Hotel1</a></td>
+                        <td>4</td>
+                        <td>
+                            <img src="img/star.jpg" height="11" width="11" />
+                            <img src="img/star.jpg" height="11" width="11" />
+                            <img src="img/star.jpg" height="11" width="11" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hotel2</td>
+                        <td>Iasi</td>
+                        <td>Iasi</td>
+                        <td><a href="http://google.com" target="_blank">Site Hotel1</a></td>
+                        <td>4</td>
+                        <td>
+                            <img src="img/star.jpg" height="11" width="11" />
+                            <img src="img/star.jpg" height="11" width="11" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hotel3</td>
+                        <td>Iasi</td>
+                        <td>Iasi</td>
+                        <td><a href="http://google.com" target="_blank">Site Hotel1</a></td>
+                        <td>4</td>
+                        <td>
+                            <img src="img/star.jpg" height="11" width="11" />
+                            <img src="img/star.jpg" height="11" width="11" />
+                            <img src="img/star.jpg" height="11" width="11" />
+                            <img src="img/star.jpg" height="11" width="11" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="search">
+            <form class="col-md-12 form-horizontal" action="">
+                <br /><br />
+                <label for="city">City:</label>
+                <select name="city">
+                    <option value="oras1">Oras1</option>
+                    <option value="oras2">Oras2</option>
+                    <option value="oras3">Oras3</option>
+                    <option value="oras4">Oras4</option>
+                </select>
+                <br /><br />
+                <label for="address">Check-in date:</label>
+                <input type="date" name="checkin" value="" required>
+                <br /><br />
+                <label for="city">Check-out date:</label>
+                <input type="date" name="checkout" value="" required>
+                <br /><br />
+                <input class="btn btn-primary" type="submit" value="Search">
+            </form>
+        </section>
+        <section id="deals">
+            <span>
+                <ul class="list-group">
+                    <li class="deals">
+                        <label>Hotel1</label>
+                    </li>
+                    <li class="deals">
+                        <img src="img/hotel.jpg" height="50" />
+                    </li>
+                    <li class="deals">
+                        <label>Discount 10%</label>
+                    </li>
+                </ul>
+            </span>
+            <span>
+                <ul class="list-group">
+                    <li class="deals">
+                        <label>Hotel2</label>
+                    </li>
+                    <li class="deals">
+                        <img src="img/hotel.jpg" height="50" />
+                    </li>
+                    <li class="deals">
+                        <label>Discount 10%</label>
+                    </li>
+                </ul>
+            </span>
+            <span>
+                <ul class="list-group">
+                    <li class="deals">
+                        <label>Hotel3</label>
+                    </li>
+                    <li class="deals">
+                        <img src="img/hotel.jpg" height="50" />
+                    </li>
+                    <li class="deals">
+                        <label>Discount 10%</label>
+                    </li>
+                </ul>
+            </span>
+        </section>
+    </article>
+    <footer class="col-md-12">From zero to hero, Teamnet Iasi</footer>
+</body>
+</html>
